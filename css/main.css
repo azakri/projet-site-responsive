@@ -260,6 +260,8 @@ footer{
       justify-content: space-between;
       width: 95%;
       margin: auto;
+      font-size: 2em;
+      color: #FF4500;
     }
 
     #regularNav ul {
@@ -277,12 +279,14 @@ footer{
   article {
     width: 45%;
     border: 2px solid white;
+
   }
 
   main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url();
   }
 
 
