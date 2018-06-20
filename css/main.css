@@ -96,19 +96,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*Common classes*/
-
-
-/*General rules*/
-
-
-/*Templates parts*/
 
 /*Header*/
 #regularNav {
   display: none;
 }
-
+/*menu mobile--------------------------*/
 #mobileNav ul {
   display: none;
 }
@@ -128,7 +121,7 @@ textarea {
   justify-content:space-between;
   position: fixed;
 }
-
+/*menudefilant-----------*/
 .boutonmenuprincipal {
 background-color: white;
 color: white;
@@ -145,24 +138,27 @@ background-color: #191970;
 position: relative;
 display: inline-block;
 }
-.dropdown-child {
+.menudefilant {
 display: none;
 background-color: #80191970;
 min-width: 50px;
 }
-.dropdown-child a {
+.menudefilant a {
 color: white;
 padding: 20px;
 text-decoration: none;
 display: block;
+font-family: 'Song Myung', serif;
 }
-.dropdown:hover .dropdown-child {
+.dropdown:hover .menudefilant {
 display: block;
 }
 
-
 img {
   width: 30%;
+}
+img-logo {
+  width: ;
 }
 button{
   width: 3em;
@@ -174,8 +170,7 @@ button{
   color : white;
   font-size: 1em;
 }
-
-
+/*aside-----------------*/
 #banniere{
   display: inline-flex;
   justify-content: center;
@@ -185,8 +180,6 @@ button{
   background-image: url(https://i.pinimg.com/originals/dc/cb/cc/dccbcc54097214930702d3b4f7bf882d.jpg);
   border-radius: 0.5em;
 }
-
-
 
 aside {
   display: flex;
@@ -199,15 +192,20 @@ aside {
   background-color: #FF4500;
 }
 
-
-
-/*Pages*/
+/*corps page---------------------------------------------*/
 main {
   width: 95%;
   height: 100%;
   margin: auto;
   margin-top: 0em;
   border-radius: 0.3em;
+
+}
+main table{
+  border-collapse: collapse;
+}
+td{
+  border: 1px; solid;
 }
 
 h2{
@@ -215,22 +213,24 @@ h2{
   font-size: 2em;
 }
 
-/*Home Page*/
-
+/*article----------------------------------------------*/
 article {
   background-color: #FF4500;
-  height: 10em;
-  width: 40%;
+  height: 7em;
+  width: 70%;
   margin: 1em 1em;
   border-radius: 0.3em;
   display:  inline-flex;
   align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-family: 'Song Myung', serif;
 
 }
 #secteuractivite, #contact{
   background-image: url(https://image.freepik.com/photos-libre/gros-plan-de-l-39-homme-ouvrant-une-porte-de-voiture-main-sur-la-poignee-homme-d-39-affaires-ouvre-une-voiture_43284-250.jpg);
 }
-
+/*footer-------------------------------*/
 footer{
   height: 6em;
   margin-top: 10em;
@@ -243,12 +243,8 @@ footer{
 
 }
 
-/*
-####### Touch pad version #########
-*/
+/*responsive pc et tablette--------------------------------- */
 @media all and (min-width: 640px) {
-  /*Template*/
-
     /*Header*/
     #mobileNav {
       display: none;
@@ -275,7 +271,7 @@ footer{
       padding-left: 1em;
     }
 
-  /*Home page*/
+  /*corps page*/
   article {
     width: 45%;
     border: 2px solid white;
@@ -289,17 +285,11 @@ footer{
     background-image: url();
   }
 
-
-  }
-
-  /*Contact page*/
-}
-
 @media all and (min-width: 1280px) {
   article {
-    width: 30%;
+    width: 100%;
   }
-}
+
 
 
 
